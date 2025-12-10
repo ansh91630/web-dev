@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ShopEasy Product Card</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f1f3f6;
+        }
+
+        /* Top bar */
+        .navbar {
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Page container */
+        .page-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0;
+        }
+
+        /* Product card */
+        .card {
+            background-color: #fff;
+            width: 360px;
+            border-radius: 4px;
+            box-shadow: 0 0 4px rgba(0,0,0,0.25);
+            overflow: hidden;
+        }
+
+        .card-inner {
+            margin: 15px;
+            border: 1px solid #e0e0e0;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 12px 14px 16px;
+        }
+
+        .product-title {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .product-desc {
+            font-size: 12px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .price-row {
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+
+        .current-price {
+            color: #1a7b29;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+        .old-price {
+            color: #999;
+            text-decoration: line-through;
+        }
+
+        .btn-cart {
+            display: block;
+            width: 100%;
+            border: none;
+            padding: 10px 0;
+            font-size: 13px;
+            background-color: #166ad9;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .btn-cart:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        ShopEasy
+    </div>
+
+    <div class="page-wrapper">
+        <div class="card">
+            <div class="card-inner">
+                <!-- Product Image -->
+                <img class="product-img" src="https://via.placeholder.com/350x210/008f4f/ffffff?text=T-Shirt" alt="Classic Cotton T-Shirt">
+
+                <!-- Product Details -->
+                <div class="card-content">
+                    <div class="product-title">Classic Cotton T-Shirt</div>
+                    <div class="product-desc">
+                        Soft, breathable cotton. Regular fit. Available in multiple colors.
+                    </div>
+
+                    <div class="price-row">
+                        <span class="current-price">&#8377;799</span>
+                        <span class="old-price">&#8377;1,499</span>
+                    </div>
+
+                    <button class="btn-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
