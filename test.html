@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+        figure {
+            margin: 0;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        figure img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        figcaption {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align:center;">Photo Gallery</h1>
+    
+    <div class="gallery">
+        <figure>
+            <img src="dogggy.jpeg" alt="Photo 1">
+            <figcaption>Beautiful Landscape</figcaption>
+        </figure>
+
+        <figure>
+            <img src="image2.jpg" alt="Photo 2">
+            <figcaption>Sunset View</figcaption>
+        </figure>
+
+        <figure>
+            <img src="image3.jpg" alt="Photo 3">
+            <figcaption>Mountain Peaks</figcaption>
+        </figure>
+
+        <figure>
+            <img src="image4.jpg" alt="Photo 4">
+            <figcaption>City Lights</figcaption>
+        </figure>
+    </div>
+
+</body>
+</html>

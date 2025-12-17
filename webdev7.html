@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Website Navigation</title>
+    <style>
+        body{
+            font-family: "Times New Roman", serif;
+        }
+        .container{
+            width: 900px;
+            border: 1px solid #ffffff;
+            margin: 30px auto;
+        }
+        .header{
+            background-color: #797171;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .header span.red{
+            color: red;
+        }
+        .menus{
+            padding: 10px;
+        }
+        .menu-row{
+            margin-bottom: 5px;
+        }
+        .menu-row a{
+            display: inline-block;
+            padding: 5px 10px;
+            margin-right: 5px;
+            text-decoration: none;
+            border: 1px solid #888;
+            font-size: 14px;
+        }
+        /* first row – blue buttons */
+        .top-menu a{
+            background-color: #e0ecff;
+            color: #0000aa;
+        }
+        /* second row – green buttons */
+        .bottom-menu a{
+            background-color: #c7ffb8;
+            color: #006600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        My <span class="red">Website</span> Navigation
+    </div>
+
+    <div class="menus">
+        <div class="menu-row top-menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <div class="menu-row bottom-menu">
+            <a href="#">Dashboard</a>
+            <a href="#">Profile</a>
+            <a href="#">Messages</a>
+            <a href="#">Logout</a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

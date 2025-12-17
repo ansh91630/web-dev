@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Product Grid</title>
+  <style>
+    :root{
+      --bg:#efefef;
+      --card:#ffffff;
+      --muted:#6b6b6b;
+      --accent:#222;
+      --border:#d6d6d6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--accent);
+      padding:22px;
+    }
+    .wrapper{
+      max-width:1200px;
+      margin:0 auto;
+      padding:18px;
+      background:linear-gradient(#fafafa,#f4f4f4);
+      border:3px solid #00000022;
+      border-radius:6px;
+    }
+    h1{
+      text-align:center;
+      margin:6px 0 18px;
+      font-size:20px;
+      font-weight:700;
+    }
+    .grid{
+      display:grid;
+      gap:18px;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      align-items:start;
+    }
+    .card{
+      background:var(--card);
+      border-radius:8px;
+      border:1px solid var(--border);
+      box-shadow:0 4px 10px rgba(15,15,15,0.06);
+      padding:12px 14px;
+      text-align:center;
+    }
+    .card .thumb{
+      height:56px;
+      width:56px;
+      margin:6px auto 8px;
+      display:block;
+      object-fit:contain;
+    }
+    .card h3{
+      margin:6px 0 6px;
+      font-size:15px;
+      letter-spacing:0.2px;
+    }
+    .desc{
+      font-size:13px;
+      color:var(--muted);
+      margin:6px 0 8px;
+      min-height:36px;
+    }
+    .price{
+      font-weight:700;
+      font-size:15px;
+    }
+    @media (min-width:900px){
+      .wrapper{padding:26px}
+      h1{font-size:18px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h1>Responsive Product Grid</h1>
+    <div class="grid">
+      <article class="card">
+        <img class="thumb" src="https://via.placeholder.com/56x56?text=1" alt="Product 1">
+        <h3>Product 1</h3>
+        <p class="desc">High-quality item with great features.</p>
+        <div class="price">₹499</div>
+      </article>
+
+      <article class="card">
+        <img class="thumb" src="https://via.placeholder.com/56x56?text=2" alt="Product 2">
+        <h3>Product 2</h3>
+        <p class="desc">Durable and stylish for daily use.</p>
+        <div class="price">₹799</div>
+      </article>
+
+      <article class="card">
+        <img class="thumb" src="https://via.placeholder.com/56x56?text=3" alt="Product 3">
+        <h3>Product 3</h3>
+        <p class="desc">Lightweight and comfortable.</p>
+        <div class="price">₹1,299</div>
+      </article>
+
+      <article class="card">
+        <img class="thumb" src="https://via.placeholder.com/56x56?text=4" alt="Product 4">
+        <h3>Product 4</h3>
+        <p class="desc">Trendy design with premium quality.</p>
+        <div class="price">₹999</div>
+      </article>
+    </div>
+  </div>
+</body>
+</html>
